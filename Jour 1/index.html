@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>#1 - Pixel Art</title>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="options">
+            <div class="opt-wrapper">
+                <div class="slider">
+                    <label for="width-bar">Largeur de la grille</label>
+                    <input type="range" id="width-bar"></input>
+                    <span id="width-value">00</span>
+                </div>
+            </div>
+        </div>
+        <div class="options">
+            <div class="opt-container">
+                <div class="slider">
+                    <label for="height-bar">Hauteur de la grille</label>
+                    <input type="range" id="height-bar" min="1" max="50"></input>
+                    <span id="height-value">00</span>
+                </div>
+            </div>
+
+            <div class="opt-wrapper">
+                <button id="submit-grid">Créer une grille</button>
+                <button id="clear-grid">Supprimer la grille</button>
+                <input type="color" id="color-input">
+                <button id="erase-button">Effacer</button>
+                <button id="paint-button" class="active">Peindre</button>
+            </div>
+
+        </div>
+        <div class="container"></div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
